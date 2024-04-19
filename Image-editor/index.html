@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Options for design -->
+        <div class="options">
+            <!-- Filter -->
+            <div class="filter">
+                <h3>Filter</h3>
+                <!-- Brightness -->
+                <div style="display: flex;flex-direction: column;">
+                    <label for="brightness" style="color: slategray;">Brightness</label>
+                    <input type="range" name="brightness" id="brightness" min="0" max="300">
+                    <p id="brightness-feedback"></p>
+                </div>
+                <!-- Grey Scale -->
+                <div style="display: flex;flex-direction: column;">
+                    <label for="Grey-Scale" style="color: slategray;">Grey Scale</label>
+                    <input type="range" name="Grey-Scale" id="Grey-Scale" min="0" max="100">
+                    <p id="greyscale-feedback"></p>
+                </div>
+
+            </div>
+            
+            <!-- Crop -->
+
+            <!-- <div class="resize">
+                <h3>Crop</h3> -->
+
+                   <!-- Width Crop -->
+                   <!-- <div style="display: flex;flex-direction: column;">
+                    <label for="height-crop" style="color: slategray;">Height</label>
+                    <input type="range" name="height-crop" id="height-crop">
+                </div> -->
+                <!-- Height Crop -->
+                <!-- <div style="display: flex;flex-direction: column;">
+                    <label for="width-crop" style="color: slategray;"> Width </label>
+                    <input type="range" name="width-crop" id="width-crop">
+                </div> -->
+<!-- 
+            </div> -->
+
+            <!-- Flip / Rotate -->
+            <div class="flip">
+                <h3>Blur</h3>
+                   <!-- BLUR -->
+                   <div style="display: flex;flex-direction: column;">
+                    <label for="blur" style="color: slategray;">Blur</label>
+                    <input type="range" name="blur" id="blur" min="0" max="10">
+                    <p id="blur-feedback"></p>
+                </div>
+                <!-- Flip -->
+                <!-- <div style="display: flex;flex-direction: column;">
+                    <label for="flip" style="color: slategray;">Flip</label>
+                    <input type="range" name="flip" id="flip">
+                </div> -->
+
+            </div>
+
+            <!-- Select Image -->
+            <div class="selection">
+                <h3>Choose Image</h3>
+
+                <div style="display: flex;">
+                    <button><input type="file" style="width: 6em;background: red; " id="file-input"></button>
+                    <!-- <button>Save</button> -->
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- Image Layout -->
+        <div class="layout">
+            <canvas id="canvas" ></canvas>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
